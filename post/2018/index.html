@@ -1,0 +1,339 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>2018 | 迎向灵光消逝的年代</title>
+
+<link rel="shortcut icon" href="https://littlekalle.github.io/favicon.ico?v=1707271483436">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://littlekalle.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            迎向灵光消逝的年代
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1707271483436"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    2018
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2021-02-16 ·
+                    </time>
+                    
+                        <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tags">
+                            # 闲梦远
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <figure data-type="image" tabindex="1"><img src="https://littlekalle.github.io/post-images/1613479660597.jpg" alt="" loading="lazy"></figure>
+<blockquote>
+<p>写了有段日子了，冬日无尽的阴雨天里写的，心绪不免枯索。算是一段生活的记录吧。</p>
+</blockquote>
+<blockquote>
+<p>幸福和意义是各不相同的。如果想要寻找幸福，一个人只需活在现在；活在此时此刻。但如果想要寻找意义—他的梦想、秘密、生命——那他必须回到自己从前的生活中，无论这日子曾经是多么暗淡无光。他还要为将来活着，尽管前途未ト。<br>
+——贾德·鲁宾费尔德</p>
+</blockquote>
+<!-- more -->
+<h1 id="有所思">有所思</h1>
+<p>一年如逝水。说逝水也不确切，逝水还会成云作雨，循环往复永无休止，时光却从不再来。多年前，季节更迭时的万分不甘、留恋和期期艾艾，如今已淡然。但看着五月拍的视频时，胸中仍涌起无比强烈的对春日的渴望——阳光那么温暖明亮，薰风吹拂，绿树招摇，众鸟喧哗，鹰鹃啼声悠悠。</p>
+<h1 id="旧友">旧友</h1>
+<p>有天去喝高中同学的喜酒，碰到一个十多年未见的同学。高中时她还是个钢牙妹，笑容温婉。彼此都非常惊讶变化之大。她一直重复着：你怎么突然长高这么多，然后为之失笑。高一时矮小土气，穿着不合身西装的我，大概是留给大多数分班前同学的印象。分别时，另一个同学送我一盒桔子，她忽然激动地翻包，说要送一样东西。我连忙推辞，可她说：我正好有东西可以送。找到一本书，是蒋勋的，塑封还没打开，递给我，说：送给背着我们突然之间长高的你。我没反应过来，稀里糊涂就接了过来，连说谢谢，可一时手上又没有东西回送，去车上找也没有。</p>
+<p>大学毕业时，我很矫情地在瀚海星云 BBS 上写过唯一一个帖子，说很多年后我们还会在被岁月消磨的容颜中认出十几岁时熟识的你。我们曾经共度年华的人，很多都消失在岁月里。可是再见面时却感觉从未远离一般。虽然我们过后可能仍不会有太多联系，可此时真实的欣喜无法抹去。</p>
+<p>说到相遇，不管是有意还是误会，我已疏远了太多朋友。情商缺乏如我，性情疏懒如我，许多事回想起来后悔得肠子都青了。可我仍不会去弥补，不会主动走出任何一步。</p>
+<h1 id="发觉自己的天性">发觉自己的天性</h1>
+<p>陈嘉映在&lt;何为良好生活&gt;中有一段话：</p>
+<blockquote>
+<p>这个疑问，笼统表达，就是：我该怎样生活？我该怎样生活这个问题不仅是人生道路之初的问题，更是贯穿人的一生的问题。这个问题，主要不是选择人生道路的问题，不是选对或选错人生道路的问题，而是行路的问题——知道自己在走什么路，知道这条路该怎么走：我们是否贴切着自己的真实天性行路。在最初“选择人生道路”的时候，没谁一开始通透了解自己的本性，了解周边环境并预见环境的变化。我们一开始不可能通透了解自己的本性，这不在于我们还不够聪明，而在于我们的本性在一开始不够具体，本性有待在盘根错节的实践中向我们逐渐清晰地显现。我们大概可以在这个意义上去理解歌德说他的浮士德是一系列越来越纯粹或纯洁(rein) 的努力。我把这个纯粹或纯洁理解为:自身通透。我以为，这种自身通透是 phronesis 最核心的含义一洞明自己行在何处， 浑然一体地洞明自己和自己所行之路，从而能贴切着自己的真实天性行路，把自己大致保持在天性所指的道路上。</p>
+</blockquote>
+<p>年轻时我几乎一直处在存在主义危机中，最近几年少了些，但仍如感冒一般不时发作。在福州时骑车四处跑，爬过很多很多山，在连绵的山岭里孤独地汗流浃背。大概也是为了发现自己的本性。可本性如洋葱一般，你以为已经剥完，里面却还有一层。</p>
+<p>这世间的种种，以为是虚幻的，却是真实。只是我无法参透。古人说少不习老庄，老不读孔孟，是有其道理的。当然，孔孟我一直不喜，老庄喜却也无助于我找到自己的天性。他们只是我合理化行为的幌子。大学毕业时，一个同学在同学录里写，要我  &quot;To seize more&quot;。虽交往不多，却深深地看透了我。思虑太多而行动太少。</p>
+<p>“贴切着自己的真实天性行路”，做起来甚难。读何兆武先生的&lt;上学记&gt;，许多地方令我生“心有戚戚焉”的感慨。譬如书里在提到金岳霖先生中年改行逻辑学时说到：</p>
+<blockquote>
+<p>一个人的思想到二十多岁就基本定型了，当然你可以进步，但思维方式不会再有根本的改变，不大可能真正重新开始。比如毛泽东，年轻时接受的是斗争哲学，可以终其一生斗争到老，而像我这样的人总觉得那是件挺伤神的事，不愿意去干。“与天斗其乐无穷，与地斗其乐无穷，与人斗其乐无穷”，这是毛的话。要让我说，“与人斗争，其苦无比”，费那劲呢。</p>
+</blockquote>
+<p>是“费那劲呢”。那我一直在尽力逃避，不敢去挖掘自己的天性，到底是天性如此？还是只是自我实现的预言？</p>
+<p>看十三邀访问王健，很有意思也很透彻的大提琴家。他说到他年轻时，两年没有给经理人打过电话问有没有音乐会，经理人骂他没有进取心，说他不可能成为演奏家，性格不对云云。又说到Yo-Yo Ma，说佩服他非常乐观、向上。“非常有能量的人，他’要’……”。嗯，说到点子上了。真羡慕哪些精力充沛、不知疲倦的人，比如老婆。有时我热切地想找人聊，可稍微想想又作罢。做一件事，我会想象中间的种种细节，可能遇到的困难，最终还未开始或者一遇到琐碎的细节便放弃。而老婆却不管不顾，先做了再说。</p>
+<p>似乎经过许多许多年的挣扎、思索，终于慢慢能接受自己了，接受最最平凡、满是缺点的自己。心比天高的年纪已经过去。未来说不定会更好，但也说不定会差一些。能掌控的东西很少很少，唯一能确定的是：心会一天比一天明晰。</p>
+<h1 id="小朋友">小朋友</h1>
+<p>萌萌小朋友的 2018 年颇多波折。写起来真是一言难尽。</p>
+<p>一七年年底又得了肺炎，后来鼻子就没干净过。年初老喊耳朵痛，听不见。带去社区医院挖了好长好长的耳屎出来，也滴了药水，不见好转。三月份带去省儿童医院、湘雅。拿到一沓检查报告，确诊是分泌性中耳炎，腺样体肥大，气传导听力已下降得非常厉害，建议手术，切除腺样体，耳朵置管。</p>
+<p>马上想尽办法在湘雅排进个病床。等待手术的前几天，血检结果发现血象高、淋巴细胞高，复查仍是如此。原定手术当天，医生过来查房时轻描淡写一句：手术做不了，要查明血象为什么高，先出院吧。</p>
+<p>办出院时，管床的年轻女医生随口说道：淋巴细胞高，怕不是白血病吧。真如晴天霹雳，我俩坐在病床上默默相对流泪。萌萌在旁边看动画片，问道：爸爸妈妈，你们为什么哭脸？</p>
+<p>于是又找血液科的医生先会诊，同时赶紧挂儿科血液科的号。血液科说高度怀疑是传单（传染性单核细胞增多症），但也不排除其他可能。出院后开了一堆血液检查，还包括骨髓穿刺。</p>
+<p>做穿刺的当天，看着瘦瘦小小、古灵精怪、还不知道将发生什么事的她被医生领进去穿刺室，门关上，心里难受得无法形容。还好骨穿也就几分钟，不像韩剧里看到的那样要用巨大的针头从脊椎里抽，只是从胸椎里抽一点点液体。萌萌很勇敢，没哭也没闹，两分钟就出来了。</p>
+<p>接下来是焦虑茫然的两周，晚上睡觉都感觉在空中飘。血液检查出来后，基本确定是传单，但却意外发现有地中海贫血。再等骨穿结果出来，心里一块石头总算落了下来。安慰自己，太幸运了，地贫总比白血病好。</p>
+<p>手术还是要做。休息了两周，决定转去病房条件稍好的人民医院，并且能找耳鼻喉科主任动手术。结果手术头天萌萌感冒了，推进手术室，麻醉医生说不能做。无奈又办出院回家。</p>
+<p>又两周后，被我们当熊猫保护的萌萌终于做完了手术。推出手术室的萌萌，侧身睡着，神情憔悴，大约麻药还没有完全醒萌。心中又难受又自责。医生说术后可以吃点冰的，促进伤口愈合，妈妈便买了冰淇淋。于是她中午便吃着 DQ 的冰淇淋，边笑逐颜开地看小猪佩奇。真是坚强的小朋友。住了一天院，第二天上午便出院。</p>
+<p>当然，事情还没完。出院后第二天发高烧，早上又带去医院。还好可能只是手术热，吃点退烧药便好了。耳朵里放了管子——要放一年，千万不能进水，洗头洗澡如临大敌。一旦感冒，鼻子里的分泌物就可能进到耳朵里，引发炎症并流脓，不能擤鼻涕。</p>
+<p>一个一小时就能做完、第二天就能出院的小手术，前后办了三次住院，往数个医院跑了数十次，几乎半年的时光就在挂号、排队、看病、等结果之间度过。个中经历，也是曲折。多少个大清早抱着还未睡醒的萌萌开车急匆匆去医院，要在查房之前赶到；多少个夜晚难以入睡，思前想后，担忧着最坏的，祈祷着最好的。<br>
+欲说还休，欲说还休。</p>
+<p>几个月大时，生病了旁人安慰，到一岁就好些了。一岁又说两岁，两岁又说四岁，四岁又说上小学就好了。想想觉得无非是自欺欺人。可谁不是抱着点微茫的希望呢？希望明天比今天好，明年比今年好。不然还能怎样？这就是生之况味吧。</p>
+<p>当然，也长大了。</p>
+<p>有一天早上给萌萌洗脸，她看到我无名指上的戒指，问这是什么。</p>
+<p>我告诉她：这是爸爸和妈妈结婚时买的。你长大了遇到你爱的人，你也会结婚。</p>
+<p>萌萌小声说：我不要结婚，我要永远和爸爸妈妈在一起，我只爱爸爸妈妈。</p>
+<p>眼泪在她眼眶里打转，滴了下来。</p>
+<p>我心里又难过又温暖，连忙蹲下来抱紧她，安慰她：好，不结婚，你不想结婚就不结婚，永远和爸爸妈妈在一起好吗？</p>
+<p>她还在抽噎着：我不要和爸爸妈妈分开，不要结婚……</p>
+<p>孩子的心啊。</p>
+<p>旅途漫长，永远一起走吧。</p>
+<h1 id="生活和变化">生活和变化</h1>
+<ul>
+<li>基本上每周都打了一次羽毛球。年少时没有喜欢上运动是憾事</li>
+<li>偏头痛发作得更加频繁，也更容易着凉</li>
+<li>倾诉的欲望越来越稀薄</li>
+<li>像往年一样读了些书。历史和社科居多，有助于理解世界的过去和现在。只能感叹一句，学无止境。</li>
+</ul>
+<h1 id="新年愿望">新年愿望</h1>
+<ol>
+<li>对身边人多些耐心。多和朋友联系</li>
+<li>多带着萌萌一起锻炼身体，增强体能和免疫力</li>
+<li>羽毛球技术进步一点</li>
+<li>每月写（至少）两篇博客</li>
+<li>如果有合适的机会，想换工作，做点不一样的事</li>
+<li>学一门前端语言</li>
+</ol>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://littlekalle.github.io/post/2017/" class="post-title gt-a-link">
+                    2017
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Fire walk with me
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://littlekalle.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

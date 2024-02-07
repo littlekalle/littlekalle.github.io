@@ -1,0 +1,307 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>2019 | 迎向灵光消逝的年代</title>
+
+<link rel="shortcut icon" href="https://littlekalle.github.io/favicon.ico?v=1707271483436">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://littlekalle.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            迎向灵光消逝的年代
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1707271483436"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    2019
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2021-02-17 ·
+                    </time>
+                    
+                        <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tags">
+                            # 闲梦远
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p><img src="https://littlekalle.github.io/post-images/1613571765849.jpg" alt="" loading="lazy"><br>
+2021 年发 2019 年的记录，有物是人非之感。回头一看，那却是丰富多彩的日子，不断向外走，探求，体验。</p>
+<!-- more -->
+<blockquote>
+<p>正确生活着的人不把问题体验为悲哀，所以，环绕他生活的是一轮明亮的光晕，而不是一片可疑的背景。<br>
+by 维特根斯坦</p>
+</blockquote>
+<h1 id="一点想法">一点想法</h1>
+<p>生疏了呀，许久不写点东西，许多想法竟然找不到合适的词语来表达。心仿佛被一个壳包围起来，只有日常生活的陈规旧俗，来呀去呀地研磨。</p>
+<p>现在在北京。窗外是灰色的天和沉沉的雾霾，前几天大风呼啸下纯净无暇的蓝天无处可觅。今年第二次来北京了。也没有约同学和朋友碰面，提不上劲头。这两年，我一方面往外走，一方面往里走。尝试了更多的东西，但和人交往的需求却越来越稀薄，从前既是习惯，也是需要，隔三差五还会问候几个老友，如今，似乎无可无不可。终究是生命的热情不够。</p>
+<p>在年轻时写的文字里，我梦想、思索，回想起来，王小波的这句话最恰当地形容了当时的心境：“我想爱，想吃，还想在一瞬间变成天上半明半暗的云。”在外漂泊的那几年，经常做关于飞的梦。我如同一只鸟，振振双臂便能起飞，偶尔失败，偶尔会顺着风，从大山的山麓盘旋而下。失重时心跳加速，风在身体下方吹拂，轻轻托起的感觉，那么清晰，真实，以至于醒来后，好几天都能沉浸在那种想飞便飞的快乐中。</p>
+<p>敏感幻想的年纪已离我远去，随之慢慢消散的，还有由于不理解自己和生活而带来的孤独、艰难、辗转反侧、寻寻觅觅。终于能一点点接受这么平凡的自己，接受生活的本来面目，或者用哲学一点的说法：认识到实然和应然之间的差异，并不放弃其中任何一个。</p>
+<p>古人说的四十而不惑，可以隐隐约约体会到是什么状态了。这些年在尘土里扑腾，有不愿、不屑、不能去求的，有求之不得的，如之奈何，如之奈何。有所了解社会和世界的游戏规则，也能明白自己的选择或者不选择造成的后果，更加清晰地认识到自己能力、精力的边界。但该有的疑惑还是有，只是不再去问，也不再苦苦追寻答案。成长需要的，更多是勇气。</p>
+<h1 id="life">Life</h1>
+<p>爸爸腰痛做了一次手术，时常感叹体力大不如前，年岁不饶人。小朋友开始打生长激素，喉咙鼻子耳朵眼睛，如走马灯般换着花样生病。我一着凉就呕吐，浑身无力昏睡不起，偏头痛说来就来。</p>
+<p>坚持打了羽毛球，大多数时候每周一次，打快乐球。只是膝盖在抗议，不时隐隐作痛，不知道还能打多久。这脆弱的肉身呀，是我们在世间仅有的依托，承载快乐，也经受痛苦。</p>
+<p>驾照增驾了摩托车，不知何时能买车，更不知何时能出发。</p>
+<h1 id="读书">读书</h1>
+<p>年中重新买了个 Kindle 后，不去图书馆借书，读的书反而更少了。从前以为三日不读书面目可憎，居然今日也能浑浑噩噩地混下去，是悲哀还是某种意义上的解脱？幼时起，无书不欢，虽然仅止于不求甚解的地步。书是我的庇护所，是我赖以从困苦贫乏生活中抽身的法门，在书中，我找寻答案，印证想法，经历无数种可能的爱情和生活。如今想来，缺乏生活经验的加持，许多时候，读书只是某种意义上的逃避罢了。想起读了那么多遍的红楼和追忆似水年华，读懂了吗？未必。更多时候仅迷失在文字、修辞、语言和意象的美，以及追求某种意义上的优越感。容易感动，缺少思考。</p>
+<h1 id="玩">玩</h1>
+<p><img src="https://littlekalle.github.io/post-images/1613571715482.jpg" alt="" loading="lazy"><br>
+<img src="https://littlekalle.github.io/post-images/1613571736642.jpg" alt="" loading="lazy"><br>
+<img src="https://littlekalle.github.io/post-images/1613571742659.JPG" alt="" loading="lazy"><br>
+<img src="https://littlekalle.github.io/post-images/1613571668024.jpg" alt="" loading="lazy"><br>
+<img src="https://littlekalle.github.io/post-images/1613571748048.jpg" alt="" loading="lazy"><br>
+<img src="https://littlekalle.github.io/post-images/1613571754683.JPG" alt="" loading="lazy"><br>
+去了一些地方。</p>
+<p>背包反穿了武功山，一天徒步二十公里，上上下下爬七百多层楼的高度，累得七点半就昏睡过去。但走在山脊线上，走在云中，走在一望无际的高山草甸上，在高山上俯瞰云海翻腾，极目千里的感受，任何辛苦都值得。十年前就说要去武功山，每一年都有新的理由没办法去——太早了草没绿，暑假太热，六月雨水太多，定好了时间约的小伙伴伴又要去出差，找不到没有杂事安排的周末——不一而足。今年才成行，如此执行力，实在令人汗颜。</p>
+<p>夏日里在乌兰布统草原上，漫步在齐腰深的草原上，薰衣草戳着深暗红的花棒，漫山遍野。草丛里随处可见那些以前只在图片上见过的花儿，翠雀、马兰、小红菊、山韭、沙参、魁蓟、蓝盆花，难以胜数。无尽的风，如鲸鱼巡游般的满天云朵，缓缓起伏、野花漫山遍野的草原，山沟谷地如羊群般蔓延散落的白桦林，塞罕坝无边际的森林，林间茂盛的草地，回想起来如梦似幻。车每开过一个转角，风景便变换一个模样，更美，还有更美的。</p>
+<p>骑了几次马，一开始被颠得七荤八素，骑到第三次，终于可以小跑着前进，乐趣无穷。只是宰客是马场的默认规矩，颇不愉快，最后一次找了私人的马，才痛快骑了两个小时。</p>
+<p>从前时常神迷于一些风景片段，如草原上的白桦林，蓝得不忍逼视的天空，云彩，去了一次，见过，体验过才发现，置身其中其实消解了许多神秘感。美景确实是美景，无可争辩，但只有与我产生过关系的，才真实存在。鲜少有纯粹的好或者恶，身体如受苦刑，眼睛应接不暇。</p>
+<p>一天暴走二十公里，才发现体力也不是想象中那么不堪一击。在外面玩没睡午觉，才发现自己也不是非睡不可。</p>
+<p>还有小东江的晨雾，白马山的露营，都是愉快的经历。</p>
+<p>当然，也有些不那么愉快的体验。去河北崇礼滑雪时，在初级道滑了半天，仗着会轮滑，便被怂恿上了中级道。自然是一头飞过旁边的防护网，扎在雪地里。头和左肩撞在雪地上，头有头盔保护，不然就是脑震荡，肩膀至今还活动受限，疼痛不止。众目睽睽之下，躺着被救护人员用铁皮小船拉下山坡的感受，一路被颠簸着，啊，至今难忘。</p>
+<p>去颐和园昆明湖上溜了一天冰。早上十点多去的时候，冰场里人还不多。冰面坚硬，布满白色划痕。以前会一点点轮滑，滑起来自然没有太大问题。技术动作几乎一致，脚下的感觉略有差异，冰上更滑，冰面上略微的凹凸不平对速度和重心的影响更大。刹车时，冰刀画出一条弧线，铲起的冰沙四散开来，赏心悦目。小朋友胆子大，动作漂亮。老人家不慌不忙地背着手，优雅地划着圈子。晴空碧蓝深邃，万寿山在阳光下闪耀着金灿灿的光。在冬日的昆明湖上滑冰，让人感到健康地活着是一件多么美好幸福的事。</p>
+<p>不管如何，都是一种体验吧。只有在体验中，我们才活着。</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://littlekalle.github.io/post/2018/" class="post-title gt-a-link">
+                    2018
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Fire walk with me
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://littlekalle.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

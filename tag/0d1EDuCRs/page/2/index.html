@@ -1,0 +1,439 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>闲梦远 | 迎向灵光消逝的年代</title>
+
+<link rel="shortcut icon" href="https://littlekalle.github.io/favicon.ico?v=1707271483436">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://littlekalle.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <div class="main-content">
+        <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            迎向灵光消逝的年代
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1707271483436"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+        <div class="current-tag-container">
+            <h2 class="title gt-c-content-color-first">
+                #闲梦远
+            </h2>
+        </div>
+        <div class="post-list-container">
+    <div class="post-inner">
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/2013/">
+                            <span class="post-title gt-c-content-color-first">2013</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <blockquote>
+<p>在自身中无法找到安宁时，也无法在其它地方获得宁静。<br>
+​											——拉罗什富科</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="/post-images/1613479458161.jpg" alt="" loading="lazy"></figure>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2021-02-16 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tag">
+                                # 闲梦远
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/sad/">
+                            <span class="post-title gt-c-content-color-first">SAD</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <p>此 SAD 非彼 sad，而是 Seasonal Affective Disorder，季节性情绪失调。</p>
+<p>这些年，每到秋冬之季，都会心绪灰暗。秋风起时，人就慢慢如沉入水中般，失去对一切的兴趣。无孔不入的冷，无处不在的潮湿，似乎永远在下的雨，笼罩着一切的灰蒙蒙的云层。</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2019-03-01 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tag">
+                                # 闲梦远
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/qiu-tian-zai-gu-du/">
+                            <span class="post-title gt-c-content-color-first">秋天在故都</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <p>出差在北京待了二十多天。同学们都说这是北京最好的季节。郁达夫所写过的故都的秋，已经很难再找到，可北京的秋天实在是一个很美的季节。有些日子，晴空一碧万里。仰头让蓝色充满眼睛，没有一丝云彩，也没有一星尘埃，如浩瀚无穷的海洋般深邃。路旁篱笆上的牵牛深蓝浅蓝粉红，枝枝蔓蔓。中午散步时，金色阳光下的一切灿烂飞扬，背阴处凉意袭人。枫树的深绿随着日夜流转慢慢灰暗，转成棕黄。到了傍晚，远方西山上的天空澄明洁净，蓝色一点点毫无痕迹地加深，渐渐融入夜色。一轮巨大的白色月亮挂在山峦上方天空中。在夜风里走着，不时抬头望望西边似乎触手可及的山脉，又欢喜又落寞。</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2019-01-07 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tag">
+                                # 闲梦远
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/laos/">
+                            <span class="post-title gt-c-content-color-first">@Laos</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <p>看到舷窗外触手可及的绿油油的稻子，我差点以为飞机要降落在水稻田里。还好，只是紧挨机场跑道的稻田。下飞机，走进如小学校般的入境处，排队拿落地签。入境表随便填，三个流水线作业的老挝入境官员基本不看人，二十美金加一张照片，护照递进去，一手交钱一手交货。走出机场，雷雨刚停的空气潮热如蒸桑拿。好吧，我来到了只在地理课上听到的国家——老挝。</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2019-01-07 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tag">
+                                # 闲梦远
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/chi-shan-mei-jian-hu-si-luan-xiang/">
+                            <span class="post-title gt-c-content-color-first">吃山莓兼胡思乱想</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <p>上周末回乡下住了一晚。上次过夜还是过年时。</p>
+<p>白天，在李子树和板栗树的清荫下，挂起吊床。正是暮春初夏，南风吹拂，熏人欲醉。阳光透过树叶缝隙，撒下点点细碎光斑，树影摇晃，光影也随之飘动。躺在吊床上，望着南边小山。小山上杂花生树，树木均发出新叶，如同换上一身新衣般精神，葳蕤蓬勃。陶渊明夏日北窗高卧，自谓羲皇上人。周作人说得半日空闲，可抵十年尘梦。如此在树影下、南风中摇荡的吊床上，我也深深赞同前人的生活趣味。</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2019-01-07 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tag">
+                                # 闲梦远
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/chun-ri-xian-xiang/">
+                            <span class="post-title gt-c-content-color-first">春日闲想</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <p>昨天弟弟的女儿周岁，吃完午饭，送爸爸他们回去。趁着还不急着回城里，便循着之前散步的路线，走了一圈。天阴沉着，上午刚飘过毛毛细雨，空气湿润清新。路旁新鲜的树叶闪着绿色湿润的光。去年买了十棵鹅掌楸树苗，尚未移栽，几根两尺来高的瘦弱小苗立在红薯地里，顶端嫩芽已萌出，数数活着的还有六棵。悬钩子嫩叶满枝，白花在叶间隐藏着。早开的白花檵木满树小丝带般白花，嘈杂纷乱。这意味着不久山间、路旁一树树的白花檵木将如烟花般开放，虽不如栽培做观赏的红花檵木色彩艳丽，却胜在天然。池塘边，山鸡椒米黄的花和刚绽出的嫩黄小叶染得满树皆黄。屋前屋后，乡野道旁，粉红的山桃花开得正盛。李花也纷纷如云。</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2019-01-07 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tag">
+                                # 闲梦远
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/zui-jin-de-zhe-teng/">
+                            <span class="post-title gt-c-content-color-first">最近的折腾</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <p>刚满两岁，萌萌得了肺炎。大概是生日那天在酒店脱了衣服玩耍，我们没有注意她是否汗湿。点滴打了十天，换了五根留置针，加上抽血、打不进去换地方重新打，被打了八九次针。住院打针，晚上回家住。白天护士过来，便开始哭着：阿姨走开。半夜梦里哭醒，不要阿姨，不要阿姨。不知在她小小的梦境里，打针是怎样难过的恶梦。有一天我半夜醒来，隐约看到她趴在旁边枕头上，正用左手撕右手的纱布，再一摸，大惊失色，留置针都已经被拔出来。嘴里还轻轻哭着，痛，痛。可怜的小家伙。</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2019-01-07 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tag">
+                                # 闲梦远
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+    </div>
+</div>
+        <div class="pagination-container">
+    
+        <a href="https://littlekalle.github.io/tag/0d1EDuCRs" class="prev-page gt-a-link">上一页</a>
+    
+    
+</div>
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Fire walk with me
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://littlekalle.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

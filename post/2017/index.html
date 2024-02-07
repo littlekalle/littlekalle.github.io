@@ -1,0 +1,283 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>2017 | 迎向灵光消逝的年代</title>
+
+<link rel="shortcut icon" href="https://littlekalle.github.io/favicon.ico?v=1707271483436">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://littlekalle.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            迎向灵光消逝的年代
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1707271483436"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    2017
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2021-02-16 ·
+                    </time>
+                    
+                        <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tags">
+                            # 闲梦远
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <blockquote>
+<p>博尔赫斯：谁也不应该一开始就拒绝一切。应该陷入泥淖，然后得以明白生命如梦幻泡影；但是不能对生命毫无了解。</p>
+</blockquote>
+<!-- more -->
+<p>写下这些的时候，2017 早已远去，甚至接下来的年份都过了十分之一。与宇宙一百多亿年，与地球四十六亿年，与恐龙存在的两亿年，与人类从猿猴进化来的五百万年，甚至只是与智人出现的十几万年相比，一年都只是恒河的一粒沙。但对我们短暂的肉身来说，却是几十分之一，或者是难以预料的更少。</p>
+<p>前一阵子看了一本讲历史的书，从宇宙起源一直讲到现在，无数纷繁的事实在时间线上一一列出。你看到人类所有的 一切不过是偶然中的偶然，五百亿人在地球上生生死死，留不下一丁点痕迹。而地球不过是一颗尘埃。宇宙在膨胀，然后又回退回奇点。所谓宗教，所谓中华文化，所谓征服与奴役，所谓先进与革命，都不过是地理性和历史性的必然加上一点点随机。是啊，长恨此身非我有。</p>
+<p>今年只出差了一周。平静无事的日子，如同在汪洋中行船，隔半天望去，似乎没什么变化。时间不是均匀流逝的，欢乐易逝，年华暗换。渐渐能体会到中年的滋味，生命的残酷一点点揭开，使人骇然。做各种事消磨时日，东奔西走，却总触不到生命最核心的部分。在看花时，我不是在看花，是在看时光中看花的自己。</p>
+<p>仍然时不时陷入到虚无和悲观中。伟大如托尔斯泰，一生都在挣扎，找到善，找到上帝，却仍在年老时离家出走。谁都逃不脱生命的羁绊和枷锁，社会生活、家人、责任和义务，内心的追求，理想与现实的差距，人生就在疲倦的追逐中消耗。一阵阵的周期性情绪低落时，阴影从四面八方包围着。什么都做不了，只能忍耐和等待。难以形容，但真实。</p>
+<p>重新开始到图书馆借书，徜徉在书架间，如入宝山。读书数量有所增加，一百左右。读了一些好书，增长了些见识。虽去不掉心中的隐忧，但读书时的快乐深刻而持久，回味悠长。读的小说和散文等偏文艺类的书比往年少多了，历史、科普、社会学让我对人类社会和世界现状有了稍微深入的认识。由此有些感慨，如果更年轻时就能有意识扩大自己的视野，锻炼性情，那今天我会在何处？会是什么模样？当然又想到昨天的我，也是由更加年幼的我来决定的，选择、际遇、性情，无可更改。回头想想这么多年的所言所行，常常背上直冒冷汗。后之视今，亦犹今之视昔。不难想象以后回想今日的情形。</p>
+<p>小朋友又得了一次肺炎，住院几天，鸡飞狗跳，咳嗽从 2017 咳到 2018，中耳炎、鼻窦炎，刚好点又传染了甲流，高烧三天。自己也得了一次重感冒，在家躺了好几天。健康如同空气和水一般，平时从来不会注意到，一旦生病才惊觉它的不可或缺。但健康几乎又不受人控制，规律饮食作息，定期锻炼就能保持健康一辈子？有点作用，但可能也不是那么有用。所以病痛是无人能逃得过，也无人可替代的。为肉体所苦的滋味，人人必尝。想想竟然有点害怕。辛弃疾闲居上饶时写的：不知筋力衰多少，但觉新来懒上楼。此时我能深深体会到个中无奈。和年岁、和这脆弱的肉身对抗，从来没有赢家。</p>
+<p>家里各处都出问题，热水器异响，自家和楼上空调漏水，卧室墙壁一塌糊涂，迁延数月也没修好。线路短路，烧得焦黑，过了半个月没有照明的日子。四处救火，大概这些，才是生活的本来面目吧。前年和永林一起开车出去玩时聊过，生活中的种种烦恼、有时难以忍受但不得不面对的亲密关系，叹息并困惑。永林说，他觉得无论和谁一起，都免不了这些，就当做人生中不得不经历的事情来接受得了。我却做不到如此达观和认命。我总是在犹豫，总是在怀疑，总是在逃避直到不得不面对。不亦悲乎。</p>
+<p>十一月天气暖和的时候，就在乡下的菜园里看到阿拉伯婆婆纳开满蓝色小花。春天不远了，新的一年又在眼前展开，鲜花、绿树、阳光又会如期而至。还是有点期待。</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://littlekalle.github.io/post/2016-liu-nian-si-shui/" class="post-title gt-a-link">
+                    2016-流年似水
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Fire walk with me
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://littlekalle.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

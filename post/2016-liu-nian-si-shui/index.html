@@ -1,0 +1,314 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>2016-流年似水 | 迎向灵光消逝的年代</title>
+
+<link rel="shortcut icon" href="https://littlekalle.github.io/favicon.ico?v=1707271483436">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://littlekalle.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            迎向灵光消逝的年代
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1707271483436"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    2016-流年似水
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2021-02-16 ·
+                    </time>
+                    
+                        <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tags">
+                            # 闲梦远
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <blockquote>
+<p>Life is struggle, often, if not usually, unsuccessful struggle; for most of us have something within us which prevents us from accomplishing what we dream and desire. And then, as we progress, we are always seeing further than we can reach.</p>
+</blockquote>
+<blockquote>
+<p>生活是斗争，经常是不成功的斗争；因为我们多数人都有着阻止我们实现理想、愿望的某些内在品质，因此在我们前进的时侯，总是看得比我们能够达到的要远些。<br>
+​										——尤金·奥尼尔<br>
+<img src="https://littlekalle.github.io/post-images/1613478661054.jpg" alt="" loading="lazy"></p>
+</blockquote>
+<!-- more -->
+<p>其实依最近这两个月忙碌的状态来说，并没有多少可写的，但不写点什么，又如同对自己许了一个诺，心里总隐隐约约惦念。</p>
+<h1 id="春光">春光</h1>
+<p>翻到手机里五月的照片和视频，绿树葱茏，阳光明媚。我转着圈拍四周春意涌动的山和树，鸟雀欢腾，南风和煦。那时我心里想的是留住此刻，记住此时沐浴的阳光和风，待到冬天万物萧索时再来回想。现在再来看，这五月的照片，让人心生向往并愿意生活下去；而与这蓝天、蓬勃绿树相比，尘世的生活多么灰暗，多么让人难以忍受啊。</p>
+<p>以前和人写信时，总爱写景色，感叹大自然美景的千变万化，幻想在其中漫步。季节周而复始，草木生长又凋零。我钟爱的春光仍会回来，一如既往。</p>
+<p>也爱感慨时光流逝之速，虽然这并没有什么用处。李太白在&lt;春夜宴从弟桃花园序&gt;里就感叹：而浮生若梦，为欢几何？</p>
+<p>老调重弹，罢了罢了。但是一年又一年，永远也看不够，写不完。</p>
+<figure data-type="image" tabindex="1"><img src="https://littlekalle.github.io/post-images/1613478725100.jpg" alt="" loading="lazy"></figure>
+<h1 id="真实的自我">真实的自我</h1>
+<p>前两年还会不时回想起在山里骑车的情景，如闪回镜头般，浮现出公路的一个拐弯，山脊上远眺的烟岚，路边休息时的疲惫，在深山听到的一声鸟鸣。但如今都渐渐模糊了，也许心已没有那么渴望在野外无忧无虑地四处游荡。细想起来，却是另一种悲哀。年轻时既畏惧也不屑于理解这个世界的规则，愿做一只独狼，或黑塞所说的荒原狼，与世格格不入，只按照自己的喜好行事。从前是一个幻想家，不清楚现实和自己的边界在哪里，总以为能无所不知、无所不能。只要我想，便能达到。如今如这世上绝大多数人一样默默生活，上班下班，操心一粥一饭，小小欢喜和小小哀愁。也并非不愿或不甘（好吧，有时还是会幻想另外一种生活，另一次生命），只是，成长永无止境，成熟却不可期。</p>
+<p>在北京和几个同学吃饭时，吃惊地发现，是不是因为他们不必被内在情绪困扰，所以才对世俗生活如此熟稔、如此甘之如饴？我花了很长很长的时间，才略微理解这个世界的运行规则。即便如此，也很难说服自己去汲汲追求世人所共同向往的。但生活，不就是去精通人情世故、社会明显或暗潜的游戏规则么？在开头引用尤金·奥尼尔的话时，我想到他的剧本&lt;天边外&gt;里的角色，人们被他的内在品质所限制，他们所看到的远比能达到的远。用在自己身上也贴切无比。</p>
+<p>这些年心态变化很多，尤其最近半年，脾气柔和了许多。我逐渐认识到自己的局限——身体上和精神上——并学着去接受作为人、作为肉身存在本身的局限性。有时也还挣扎，还困惑，但努力不气馁，不放弃。在读存在主义哲学时，恍然认识到，自己许多年来一直思索但不得其解的问题，已经早就有人思考过。面对生命的困境，读点哲学或许可以找到点慰藉，虽然并不一定是答案。</p>
+<p>想了这么多，日后一定又会忘记，又会要重新再发现一遍。但生命也许正是在这些疑惑和解答中成长成熟的吧。似乎又有信心去走这漫漫长路。<br>
+<img src="https://littlekalle.github.io/post-images/1613478730125.jpg" alt="" loading="lazy"></p>
+<h1 id="读书">读书</h1>
+<p>今年读了六十六本书，跟往年差不多。值得强烈推荐的是两本：</p>
+<ul>
+<li>枪炮、钢铁与细菌：从农业、生物学、地理学角度来阐述文明的产生和发展。为何是旧大陆征服了新大陆而不是反过来？为什么是白人奴役了非洲？这些问题都可以在书中找到颇让人信服的解释。</li>
+<li>中国历代政治得失：笔力透纸背，应该是形容这种书的。钱穆先生学识深厚，见识极深刻，难得的是书写得清晰易懂。</li>
+</ul>
+<p>夏天花了两个月重读了一遍&lt;静静的顿河&gt;，书评只写了一点点，懒散得无可救药。愈发想去一次俄罗斯，虽不一定能看到想象中的俄国。过完年有去莫斯科出差的机会，只是要每天长途奔袭送小朋友上幼儿园，只好推掉了。</p>
+<p>我已渐渐不再在书中去寻找自己的影子，不去只关注能引起共鸣的想法。读书于我来说，纯粹是一种快乐。我醉心于智识的深邃，文字的优美，体味到这具肉身无法触及和抵达的种种神秘幽微之处。读书不再是唯一的，但仍是从这尘世逃离、抵抗平庸无聊的最重要出口。<br>
+<img src="https://littlekalle.github.io/post-images/1613478720862.jpg" alt="" loading="lazy"></p>
+<h1 id="小朋友">小朋友</h1>
+<p>小朋友已慢慢长大，过完年就满三岁。春天又得了一次肺炎，感冒数次。小小个子小小的脸，仍爱动，爱看小猪佩奇和海尔兄弟。有时候挨批评时会生闷气，一板一眼严肃地说：爸爸，你不要这样。当她睁大乌黑的眼睛看着你时，你会感到全世界都透过那双眼睛看着你。</p>
+<p>偶尔出差时，和她视频聊天。听她叫爸爸，词不达意地问你在哪里，你什么时候回来，就忍不住想去抱着她，摸她小小的头，亲吻她小小的脸。这血肉的羁绊，随时间慢慢累积，终将比山高，比海深。她不断带给你新鲜感和幸福感，跟着她，仿佛可以再活一次。<br>
+<img src="https://littlekalle.github.io/post-images/1613478736347.jpg" alt="" loading="lazy"></p>
+<h1 id="流年">流年</h1>
+<p>所谓流年似水，新知旧雨，前尘如梦。已非懵懂的青年，许多问题不再让我夜不能寐，却有更多麻烦使我忧心。很多朋友已如飞花散落天涯，疏通音信；很多近在身边，也渐行渐远。这是个叫做命运的茫茫旅途。</p>
+<p>愿各自珍重。</p>
+<p><img src="https://littlekalle.github.io/post-images/1613478715025.jpg" alt="" loading="lazy"><br>
+<img src="https://littlekalle.github.io/post-images/1613479504763.jpg" alt="" loading="lazy"></p>
+<blockquote>
+<p>写好好久了。拖延症，你懂的。</p>
+</blockquote>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://littlekalle.github.io/post/2015/" class="post-title gt-a-link">
+                    2015
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Fire walk with me
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://littlekalle.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

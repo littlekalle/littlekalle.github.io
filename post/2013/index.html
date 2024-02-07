@@ -1,0 +1,305 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>2013 | 迎向灵光消逝的年代</title>
+
+<link rel="shortcut icon" href="https://littlekalle.github.io/favicon.ico?v=1707271483436">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://littlekalle.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            迎向灵光消逝的年代
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1707271483436"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    2013
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2021-02-16 ·
+                    </time>
+                    
+                        <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tags">
+                            # 闲梦远
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <blockquote>
+<p>在自身中无法找到安宁时，也无法在其它地方获得宁静。<br>
+​											——拉罗什富科</p>
+</blockquote>
+<figure data-type="image" tabindex="1"><img src="https://littlekalle.github.io/post-images/1613479458161.jpg" alt="" loading="lazy"></figure>
+<!-- more -->
+<h1 id="故乡">故乡</h1>
+<p>其实去年几乎持续拍了一年的物候，但一直犯懒没有整理照片。今年春天时，整理了一部分，并写了一小段后，它们又被静静遗忘在硬盘某个角落里一年。拖延症是无药可救的。</p>
+<p>每周末回家，我总会和老婆在家附近的小路上散步。</p>
+<p>下坡左拐下去，是一个小池塘，层叠的小块稻田散布在马蹄形盆地中央。左手边小斜坡上，十月清晨会开满深蓝的牵牛花，令人想起”一朵深渊色“。夏夜可以坐在池塘边数数星星。大熊，小熊，仙后，天鹅，哦，那是狮子座，这是牧夫座，只要不害怕蚊子骚扰的话。当然，老婆永远是怕蚊子骚扰的。右边似乎总是开满大花美人蕉。稻田一直延伸到对面水库山脚下。</p>
+<p>右拐下去，可以绕屋前的池塘一圈，或者去稍远的山间道上。春阴漠漠时，桃李次第开放，路旁悬钩子挂满酷似小号草莓的鲜红小果。桐花寂寂，鹰鹃在身旁小山顶的密林中一声声。粉团蔷薇如小家碧玉般一份粉又一份白，开得热烈，金樱子爬上大树又垂下，开成一道花的瀑布，五月阳光下远远望去甚是迷人。</p>
+<p>去山阴道中，光线清幽得有点瘆人。马尾松凋落的枯针叶铺满路肩，只在中间一道小小留白。空气都微熏的暮春初夏夜里，栀子花散发出浓重的香气。珍珠花静静在树荫下挂出一串串洁白的小灯笼。秋天野菊四处开放，盐肤木、乌桕醉酒般红黄斑驳，在瑟瑟风中一日比一日身形清朗。构树、小构叶子染上最纯净的明黄。</p>
+<p>五月时，躺在树下吊床上看书，偶一抬眼，对面山中树木深深浅浅的新绿竟让人痴看入迷。眼里山野绿，叶底布谷鸣，俳句这样写道。春深时，定是要硬拉老婆一起去稍远的水库那边远足，看望那几株枫树。它们在晴空下绿得张扬，如一树碧玉。看久了，仿佛我们也分享到那蓬勃涌动的生命力，能再生枝发叶般。如此已两年。</p>
+<p>简媜在她的散文 &lt;台北&gt; 中写道：</p>
+<blockquote>
+<p>如果有人像我一般，在生命最活泼的前十五年完整地生长在与世无争的平原乡村，听懂天空与自然的密语、窥视山峦与云雾的偷情、熟悉稻原与土地的缱绻、参与海洋与沙岸的幽会、牢记民俗与节庆的礼仪，也学会以叔伯兄嫂一路喊遍全村每一个人……。那么， 没有理由在往后岁月寻求另一处地方当作原乡。</p>
+</blockquote>
+<p>我亦作如是想。</p>
+<h1 id="读书">读书</h1>
+<p>今年读书真是乏善可陈，六十二本。夏天几个月忙着一点杂事，狂啃各类技术书，病急投医般。</p>
+<p>朱天心的&lt;猎人们&gt;应该算是惊喜。早好几年挂在购书单上一直未买，最终也只是在Kindle上看而已。喜欢猫又没有条件养猫，只好看看书过眼瘾。小时候，源于爸爸喜欢小动物，家里陆续养过数只猫，有能上树抓斑鸠、猫头鹰的，有长得跟熊猫似的黑白花，可惜各都未得善终。犹记得放学回家它们早早等在路边，人一上前便绕着裤脚钻过来又绕过去，粘腻得不让人走路，又恼又喜。</p>
+<p>旧雨有李娟的&lt;九篇雪&gt;，一月和十二月各读了一次，夜里读书的这点点时光，是真正活着的时光。</p>
+<p>新知有狄更斯。年少时没有机会读的小说，现在读来亦别有兴味。科普书有&lt;众病之王&gt;和&lt;上帝掷骰子吗&gt;值得推荐。后者将枯燥的量子物理学历史写得妙趣横生，一气读完仍嫌意犹未尽。</p>
+<p>智能手机是浪费时间，各种鸡零狗碎吸走注意力。当然，生活也是如此，一地鸡毛，不说也罢。明年希望多读几本自己喜欢、有趣的书。</p>
+<h1 id="心事">心事</h1>
+<h2 id="时光">时光</h2>
+<p>正如歌里唱的，初看春红，转眼已深冬。睡前听朗读的朱自清的&lt;匆匆&gt;，又一遍遍听简媜在&lt;绿云&gt;的结尾里写的：“门前一道流水，两岸夹着垂柳。风景年年依旧，为什么流水一去不回头。流水啊！请莫把光阴带走。”每次看到树木山川在春日重又绽出新叶，繁荣葱茏时，便从心底惊叹，一年年风霜拍打，它们却总也不变，无情无欲，无知无识，长久的不知疲倦。不像你也不像我，一次长成只为了一次零落。一岁岁都如是。</p>
+<p>寒冬夜读书历来是最爱。最近夜里重读了一遍&lt;日瓦戈医生&gt;。大二时初次读此书，还是缘于先看过改编的电影，才起心读一读原著。只记得彼时如赶路般，急急读完便还往图书馆，满眼山花浪漫，回想起来，却只有一片色彩斑斓。今日重读却感触颇深。“人是为生活而生的，不是为准备生活而生的。”医生对拉拉说。当然，日瓦戈是说布尔什维克所作所为无异于竹篮打水，追着夸父的日头却无视生命的真正目的和生活的真正意义。但，这句话也确切地描述了对于个人来说应该遵守的生活准则。人是如何生，如何在这如群蚁的尘世中获得内心的安宁，如何在时代和命运的洪流中找到自身的平衡，如何去爱，去痛恨和同情，在读书时，我不断思索着。驽钝如我，似乎，到今日才慢慢明白，所谓世俗的幸福是什么，而获得或者不能获得这种幸福，对我来说又意味着什么。到这里，我又要感谢时光带给我的一切。它让我看清楚自己从童稚时起，内心所走过的轨迹，让我明白一切都不是浪费、不会虚度，让我在今日能逐渐清晰地望穿俗世所能给予的，并有得之失之均淡然的可能性。</p>
+<p>也许，是到了重读&lt;静静的顿河&gt;的时候了。</p>
+<h2 id="朋友与自己">朋友与自己</h2>
+<p>丢在身后的越来越多，似乎，离从前的自己也越来越远。当然何者是真实，何者只是虚幻，也辨不清楚。只能劝慰自己说，都是好的吧。从前隔着天涯经常联系的朋友，地理距离拉近后，反而音讯渐稀，甚至全无。这大抵都要归结到自己懒散冷淡吧。小熊和岸同学生了小小熊，伴郎王大牛同学在美国结婚，Clean同学怀孕数月，我自己也马上要做爸爸。那些远在天边的事，似乎在转眼间就到跟前。生命给了我们数十年的光阴来准备，临到眼前，却发觉自己如同赤身裸体上战场般毫无防备。但是，亲爱的孩子，既然你选择通过我们来到这个世界，选择在我们弓上出发，那我们还有什么不欣然承受的呢？也许正因为你如此宝贵，无论我们做多少准备，也都会觉得不够吧。</p>
+<p>代还兄飞往英国深造，可喜可贺。秋天时，多年不见的HL同学路过长沙，小聚了一下。似乎仍是十多年前刚进大学时的样子，性情依旧，谈笑依旧，只是此时都各已成家，在人生的道路上都往前行了一大段。能忆起的，大概应该是少年听雨歌楼上吧。</p>
+<h2 id="未来">未来</h2>
+<p>对于未来的期待，很简单，家人朋友都身体健康。很期待快点见到老婆肚子里的宝宝，希望你健康快乐地长大，很期待和你再过一次童年！</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://littlekalle.github.io/post/sad/" class="post-title gt-a-link">
+                    SAD
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Fire walk with me
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://littlekalle.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

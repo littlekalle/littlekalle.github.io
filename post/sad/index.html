@@ -1,0 +1,301 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>SAD | 迎向灵光消逝的年代</title>
+
+<link rel="shortcut icon" href="https://littlekalle.github.io/favicon.ico?v=1707271483436">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://littlekalle.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            迎向灵光消逝的年代
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1707271483436"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    SAD
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2019-03-01 ·
+                    </time>
+                    
+                        <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tags">
+                            # 闲梦远
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>此 SAD 非彼 sad，而是 Seasonal Affective Disorder，季节性情绪失调。</p>
+<p>这些年，每到秋冬之季，都会心绪灰暗。秋风起时，人就慢慢如沉入水中般，失去对一切的兴趣。无孔不入的冷，无处不在的潮湿，似乎永远在下的雨，笼罩着一切的灰蒙蒙的云层。</p>
+<!-- more -->
+<p><img src="https://littlekalle.github.io/post-images/1613568980912.jpg" alt="" loading="lazy"><br>
+脑海中想法翻来覆去，总往虚无和终极上飘。无论想到什么，准备开始做点什么，最终会想到，几十年后，人终有一死，宇宙终将热寂，我今天这些奔忙挣扎，又何必呢？宗教不过是人类为了寻找寄托臆想出来的，偶像只是寄托空虚、寻求利益的工具。</p>
+<p>开始以为本性如此，是个悲观和消极的人，生命中缺少能量，也少有动力。有一天忽然看到季节性情绪失调这个词，忽然意识到，难道不仅仅是性格，而是跟季节有关？</p>
+<p>春夏时，总可以看到阳光，去郊野中散步，爬山，享受自然和生命的乐趣。秋冬一来，真是“淫雨霏霏，连月不开”。种种生活上的不便，如持久不息的浪，侵蚀着本不坚固的沙堤，人便一天天往下落。只是现在还没有完全垮掉。</p>
+<h1 id="sad-之于本性">SAD 之于本性</h1>
+<p>然而，SAD 也并不仅仅是SAD。很久以前，读到田园、山水诗时，便心生向往。在我眼中，世界不过是个丛林，所有人绞尽脑汁为蝇头小利，为资源和利益争得面红耳赤。我所想做的，无非是后退，避开一切竞争。</p>
+<p>直到很近，我才明白博尔赫斯在 &lt;七夜&gt; 中所说的意思：</p>
+<blockquote>
+<p>谁也不应该一开始就拒绝一切。应该陷入泥淖，然后得以明白生命如梦幻泡影；但是不能对生命毫无了解。</p>
+</blockquote>
+<p>这是佛教关于苦行的训示。当然，对我来说，几乎已经于事无补了。年岁渐长，可能性也随着时光一点点消逝。不再是一张白纸，不再是充满可以成为什么，成为很多，成为任何的容器。与其说是接受，不如说是无可如何。</p>
+<p>在偶然的生活中，怀着必然的希望，那注定是要落空的。</p>
+<h1 id="新生">新生</h1>
+<p>其实想说 SAD， 是因为今年开始的冬天后面两个月，心境却突然好了很多。不再有那么多阴沉低落的思绪挥之不去，阴雨连绵似乎对我影响也小了许多，最多抱怨下不方便。</p>
+<p>是去年坚持打羽毛球的原因吗？还是——我终于沉到生活里了？</p>
+<p>看佐野洋子的书 &lt;没有神也没有佛&gt; 里说，</p>
+<blockquote>
+<p>每个当下有每个当下的喜悦。无论多么不幸的时刻，人都可以靠小小的喜悦活下去。生存的诀窍，一定在于发现很多小小的喜悦。</p>
+</blockquote>
+<p>大概是这样。</p>
+<p>从楼上望下去，河边草地绿意已浓得化不开，泛滥的黄浊的春水淹没了低处草地。初春时，心里是怀着希望的。想想春天要来了，“春山茂，春日明”，能脱掉沉重的衣物，去山里看花，看新生的树叶，任暖和的风拂面而来，感受生命和活着，不管怎样都是很开心的事啊。</p>
+<blockquote>
+<p>拍了一张鹅黄的山鸡椒，没拍好。阿拉伯婆婆纳的蓝色小花如星星般洒满路边。山莓枝条上绽满白色花朵。</p>
+</blockquote>
+<blockquote>
+<p>又过了一周，白玉兰、紫玉兰已凋落，桃花李花正盛。春日如盛宴正要开场。</p>
+</blockquote>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://littlekalle.github.io/post/安娜·卡列尼娜/" class="post-title gt-a-link">
+                    安娜·卡列尼娜
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Fire walk with me
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://littlekalle.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

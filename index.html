@@ -1,0 +1,537 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>迎向灵光消逝的年代</title>
+
+<link rel="shortcut icon" href="https://littlekalle.github.io/favicon.ico?v=1707271483436">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://littlekalle.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <div class="main-content">
+        <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            迎向灵光消逝的年代
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1707271483436"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+
+        <div class="post-list-container">
+    <div class="post-inner">
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/2023/">
+                            <span class="post-title gt-c-content-color-first">2023</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <p><img src="https://littlekalle.github.io/post-images/1707270062580.JPG" alt="" loading="lazy"><br>
+春日的枫树</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2024-02-07 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tag">
+                                # 闲梦远
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/huai-nian-ba-ba/">
+                            <span class="post-title gt-c-content-color-first">怀念爸爸</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <p>时常梦见爸爸。春天，他在犁好的水田里做田埂。水平如镜，映着春天的微云和发着新芽的绿树。</p>
+<p>晚上，经常打开乡下家里的摄像头看很久。夜风中，桃树轻轻摇动，围墙外竹林簌簌作响。远远传来田间聒噪的蛙声。我盼着，也许有一天，爸爸看完抗日神剧出来，望望夜月的身影会再出现。妈妈说，我一直觉得你爸爸是出去做事没回来。如此强壮盛大的生命，近乎戛然而止，怎能不叫人心怀不甘。</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2023-07-03 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tag">
+                                # 闲梦远
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/chang-bai-shan-zhong-de-suo-luo/">
+                            <span class="post-title gt-c-content-color-first">长白山中的梭罗</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <p>#读至乐</p>
+<p>向来喜欢读自然文学。囫囵吞枣，兼收并蓄，时而得意忘形。</p>
+<p>起初，无意中看到别人标记读过《狐狸的微笑》，看简介是我喜欢的类型。从图书馆借了本，冬夜睡前，窝在温暖的被子里，如咂醇露般，随作者漫游在遥远的长白山中。赤狐微笑，青鼬追逐，黑熊蹲仓，如读《在乌苏里的莽林中》的时光。舍不得读完。</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2023-02-19 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/Ais-pGI0-/" class="post-tag">
+                                # 读至乐
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/liu-an-hua-ming-chun-shi-shen/">
+                            <span class="post-title gt-c-content-color-first">柳暗花明春事深</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <figure data-type="image" tabindex="1"><img src="https://littlekalle.github.io/post-images/1616683165325.JPG" alt="" loading="lazy"></figure>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2021-03-25 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tag">
+                                # 闲梦远
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/2020/">
+                            <span class="post-title gt-c-content-color-first">2020</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <figure data-type="image" tabindex="1"><img src="https://littlekalle.github.io/post-images/1613570965969.jpg" alt="" loading="lazy"></figure>
+<h1 id="change-is-the-only-constant-in-life"><em>Change</em> is the <em>only</em> constant in life.</h1>
+<p>这一年，在历史中回望的时候，不知会如何描述。如同我们今天提起西班牙大流感，留在人们记忆中的，也只有遥远模糊的印象。那些在历史书中一笔略过的漫长时日，也许才是普通人安心生活的岁月。二十一世纪第三个十年，这上世纪科幻小说中憧憬的时代，以为人类已经殖民火星，迈向星辰大海的时代，却被小小的病毒打得原形毕露。科技进步，如同稚子执火，给人无比强大的幻觉。民族矛盾、政治浮沉、人性的善与恶、制度和官僚的僵化、人如尘埃的命运，却一如从前。如黄舒骏在“改变 1995”里写的，天天都想离开，却不知到哪里，才能换骨脱胎。</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2021-02-17 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tag">
+                                # 闲梦远
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/2019/">
+                            <span class="post-title gt-c-content-color-first">2019</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <p><img src="https://littlekalle.github.io/post-images/1613571765849.jpg" alt="" loading="lazy"><br>
+2021 年发 2019 年的记录，有物是人非之感。回头一看，那却是丰富多彩的日子，不断向外走，探求，体验。</p>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2021-02-17 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tag">
+                                # 闲梦远
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/2018/">
+                            <span class="post-title gt-c-content-color-first">2018</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <figure data-type="image" tabindex="1"><img src="https://littlekalle.github.io/post-images/1613479660597.jpg" alt="" loading="lazy"></figure>
+<blockquote>
+<p>写了有段日子了，冬日无尽的阴雨天里写的，心绪不免枯索。算是一段生活的记录吧。</p>
+</blockquote>
+<blockquote>
+<p>幸福和意义是各不相同的。如果想要寻找幸福，一个人只需活在现在；活在此时此刻。但如果想要寻找意义—他的梦想、秘密、生命——那他必须回到自己从前的生活中，无论这日子曾经是多么暗淡无光。他还要为将来活着，尽管前途未ト。<br>
+——贾德·鲁宾费尔德</p>
+</blockquote>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2021-02-16 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tag">
+                                # 闲梦远
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/2017/">
+                            <span class="post-title gt-c-content-color-first">2017</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <blockquote>
+<p>博尔赫斯：谁也不应该一开始就拒绝一切。应该陷入泥淖，然后得以明白生命如梦幻泡影；但是不能对生命毫无了解。</p>
+</blockquote>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2021-02-16 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tag">
+                                # 闲梦远
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/2016-liu-nian-si-shui/">
+                            <span class="post-title gt-c-content-color-first">2016-流年似水</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <blockquote>
+<p>Life is struggle, often, if not usually, unsuccessful struggle; for most of us have something within us which prevents us from accomplishing what we dream and desire. And then, as we progress, we are always seeing further than we can reach.</p>
+</blockquote>
+<blockquote>
+<p>生活是斗争，经常是不成功的斗争；因为我们多数人都有着阻止我们实现理想、愿望的某些内在品质，因此在我们前进的时侯，总是看得比我们能够达到的要远些。<br>
+​										——尤金·奥尼尔<br>
+<img src="/post-images/1613478661054.jpg" alt="" loading="lazy"></p>
+</blockquote>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2021-02-16 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tag">
+                                # 闲梦远
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="post gt-bg-theme-color-second">
+                <div class="post-left">
+                    <div>
+                        
+                        <a href="https://littlekalle.github.io/post/2015/">
+                            <span class="post-title gt-c-content-color-first">2015</span>
+                        </a>
+                    </div>
+                    <div class="gt-post-content post-abstract gt-c-content-color-second">
+                        <blockquote>
+<p>所有漫不经心的生活都只是生活的某种虚空形式，如果一个人意识不到这点，那就不是为自己生活，而是为生活牺牲，为生活卖命、奔波、劳苦；为达不到的目标烦恼，为不需要的权利而鼓噪；在生活的泥潭里打滚，把自己弄得污浊不堪。一旦前景破灭，就会苦不堪言，虽然为了自己解脱的缘故把生活的物质意义说得诤诤有词、言之凿凿，死后带走的仍是被人一眼看穿的孤独，这样的生活仅仅值得人死后再死一次了。      —— 托尔斯泰 - 战争与和平</p>
+</blockquote>
+<blockquote>
+<p>'Love is so short, oblivion so long.'      —— 聂鲁达</p>
+</blockquote>
+
+                    </div>
+                    <div class="post-info">
+                        <time class="post-time gt-c-content-color-first">
+                            发布于 · 2021-02-16 ·
+                        </time>
+                        
+                            <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tag">
+                                # 闲梦远
+                            </a>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        
+    </div>
+</div>
+
+        <div class="pagination-container">
+    
+    
+        <a href="https://littlekalle.github.io/page/2" class="prev-page gt-a-link">下一页</a>
+    
+</div>
+
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Fire walk with me
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://littlekalle.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>吃山莓兼胡思乱想 | 迎向灵光消逝的年代</title>
+
+<link rel="shortcut icon" href="https://littlekalle.github.io/favicon.ico?v=1707271483436">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://littlekalle.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            迎向灵光消逝的年代
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1707271483436"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    吃山莓兼胡思乱想
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2019-01-07 ·
+                    </time>
+                    
+                        <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tags">
+                            # 闲梦远
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>上周末回乡下住了一晚。上次过夜还是过年时。</p>
+<p>白天，在李子树和板栗树的清荫下，挂起吊床。正是暮春初夏，南风吹拂，熏人欲醉。阳光透过树叶缝隙，撒下点点细碎光斑，树影摇晃，光影也随之飘动。躺在吊床上，望着南边小山。小山上杂花生树，树木均发出新叶，如同换上一身新衣般精神，葳蕤蓬勃。陶渊明夏日北窗高卧，自谓羲皇上人。周作人说得半日空闲，可抵十年尘梦。如此在树影下、南风中摇荡的吊床上，我也深深赞同前人的生活趣味。</p>
+<!-- more -->
+<p><img src="https://littlekalle.github.io/post-images/1613568725404.jpg" alt="" loading="lazy"><br>
+<img src="https://littlekalle.github.io/post-images/1613568731437.jpg" alt="" loading="lazy"><br>
+两周之前，我一个人跑到家对面的路边吃山莓，也就是悬钩子，吃了个肚皮滚圆。后果，就是上嘴唇肿得跟东成西就里边梁朝伟一样，如同挂了一根香肠。下午被老婆和小熊他们嘲笑得要死。两天后，嘴唇里脱了一层皮才彻底好了。应该是刚好吃的山莓上有小虫子吃过或爬过，留下了毒液。小时候吃了十几年，从没出过任何问题，想不到今天却阴沟里翻船。</p>
+<p>但肿成香肠嘴的风险，也敌不过山莓的美味。酸酸甜甜，而且每一树口味都略有差异。于是，吃过早饭，便带萌萌和老婆一起去稍远一点的山里摘山莓。这次却不敢肆无忌惮往口里塞，带了一个碗，先放在碗里，准备回家稍微洗一下再大快朵颐，只偶尔尝几颗饱满红润，形神俱佳的极品。</p>
+<p>山里的桐花已经开过，小小油桐子挂满枝头。池塘边，大簇粉团蔷薇垂在水边，野蜂飞来飞去，水面飘着许多粉红花瓣，走近些，轻风便送来微甜的花香。珍珠花的白色铃铛又开得满枝。另一种不认识的白花（叶子和灯台树的有点像）发出浓烈的涩香味。春深的山野，充满青葱之气。放眼四顾，绿绿绿，都是绿。能开花的拼命开满，能长叶的尽力长圆。自然真是最伟大的魔术师，面对冬天枯索的万物，简直不能想象它们还有复原之时，而季节一到，萌花绽叶，一往无前。</p>
+<p>夜里哄完小朋友睡觉，披衣独自走到池塘边。南风吹得树梢呼呼作响，木星在头顶放着明亮的光，平日里最亮的大角星，在木星的光辉下也显得暗淡了许多，南河十二，轩辕十四更是渺小。望着四周树木丘陵的黑影，一股莫名的疑惑和惆怅袭上心头。我如此熟悉这些山峦的曲线，这些从幼年时起就眺望的山峦。曾在它们的树林和灌木丛里钻来钻去，春天摘映山红，撞得满身雨露；秋天漫山寻野果，贪婪吮吸着一丝丝淡薄的甜味。纵横交错的小径，都曾光脚跑过，树荫下泥土小路冰凉的触感，仿佛仍在我脚底。道旁树木的形状也深深印在脑海中，虽然年复一年它们同样在改变。哪条小沟下大雨后鱼很多，常去的路上哪个地方石头比较扎脚，都记忆犹新。多年前漂泊在外时，曾以为只要回到这里，就可以慰解难以消解的渴望，不用再一遍遍回想往日熟识的季节、树木、山峰、气味和光影。那为何，此刻身处其中，却仍怀着一种不可名状的乡愁？</p>
+<p>但其实，不过是平凡无奇的江南丘陵地带。多贫瘠的第四纪红土，马蹄形小盆地，盆地中夹着层层弯曲的梯田。平凡的人家，春种秋收，生老病死。天空和繁星亘古不变，风仍是幼年时吹过的风，我拉紧衣服，在池塘土路上徘徊。</p>
+<p>静静的顿河里，葛利高里从红军复员回家时，</p>
+<blockquote>
+<p>很有滋味地幻想着，回家以后，脱下军大衣和皮靴，穿上肥大的布靴子，照哥萨克的习惯，把裤腿几套进白毛线袜筒里，把家织的粗呢棉袄披在暖和的上衣上，到田地里去手扶着犁柄，踏着湿润的犁沟，跟在犁后头走，使劲吸着翻耕起来的泥士潮润的、淡淡的气味，吸着犁烨切断的草茎的苦味，该有多美啊。在异国他乡，就是泥土和青草的气味也都不一样。在波兰、乌克兰和克里米亚，他曾多次把灰色的苦艾梗子放在手巴掌上揉碎，一闻，就不禁伤心地想：“不，不是家乡的味道，这是异乡的……”</p>
+</blockquote>
+<p>我这无根的漂泊者，在家乡暮春清风涌动的夜里，到底在寻找什么呢？想重回时光中的时光吗？想再寻回那些永不再来的快乐吗？</p>
+<p>夜里怎么也睡不踏实。屋后山顶林子中，鹰鹃彻夜不休地啼着。古人说杜鹃啼血，不在春夜听它整夜悲啼，不能体会那啼声是何等凄苦。这啼声几十年来一直响在我梦里。</p>
+<p>南风仍吹拂着。</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://littlekalle.github.io/post/chun-ri-xian-xiang/" class="post-title gt-a-link">
+                    春日闲想
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Fire walk with me
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://littlekalle.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>2023 | 迎向灵光消逝的年代</title>
+
+<link rel="shortcut icon" href="https://littlekalle.github.io/favicon.ico?v=1707271483436">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://littlekalle.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            迎向灵光消逝的年代
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1707271483436"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    2023
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2024-02-07 ·
+                    </time>
+                    
+                        <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tags">
+                            # 闲梦远
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p><img src="https://littlekalle.github.io/post-images/1707270062580.JPG" alt="" loading="lazy"><br>
+春日的枫树</p>
+<!-- more -->
+<p><img src="https://littlekalle.github.io/post-images/1707270075917.JPG" alt="" loading="lazy"><br>
+满山的油桐花</p>
+<p>去年没写年终碎碎念，前年写了，但没发。逝者如斯夫，这宽广的河流，奔流日夜不息。带走欢乐、悲伤，掳走生命，老了少年，白了青丝。</p>
+<p>年初的新冠是很多人惨痛的记忆，失去亲人，失去健康。而我庆幸只在床上水米不进躺了一周。恢复的过程漫长，寒风似乎能直接吹透头盖骨。工作近十年的公司正好经历动荡。我在焦虑中终日惶惶。三月底，朋友介绍，正好有个新机会，便换了份工作。</p>
+<p>用一个词来总结这一年，自我觉醒，比较贴切。</p>
+<p>看看两年前写的回顾，停滞感和被卡住的感觉，是写得最多的。工作十年，熟悉的环境变成桎梏，没有外部的动力，自身更容易在既定但看不到方向的轨道上，靠惯性滑行。无非是做着不甚感兴趣但不得不为的事，消磨许多时日。</p>
+<p>曾经无数次自我分析过，我的天性逃避、被动，只能让生活和命运的潮水将我卷走。自我怀疑，在一日日啃噬着我。从没有主动追求过什么。大学同学录上，S 写的一句话：To seize more，记忆犹新。但从未付诸实践。我是临渊羡鱼之人，是无法抵抗自身性格和弱点的懦夫。</p>
+<p>或许是到了一个临界点。换工作之后，有许多新的经历和体验。从中感受到努力是什么滋味——这么说来，几乎是个从未努力之人。也看到大家很厉害，但也都有各自的弱点。我并不是一无是处。打开自己，拥抱变化，拥抱对固有习惯和认知的挑战，放开对安全感的需求和预期。这样的一年，最大的收获，是去体验，去尽力推动巨石，去掌控自己的生活和命运。这是我迟到但仍未嫌太晚的觉醒吧。</p>
+<p>前年读了本让人享受（好久没再彻夜不休地读小说）的小说，《奥勃洛莫夫》，主人公想到：“如果把一切机遇都当成错误而加以拒绝的话，那什么时候才不是错误呢？”奥勃洛莫夫放弃了奥丽加，内心深处是恐惧和不自信。</p>
+<p>而面对恐惧，唯一的办法是，直面它，穿过它。</p>
+<p>出差很多，广州去了十几次，深圳一次，石家庄去了好几次。预计明年更多。尝试了很多新东西。戴隐形眼镜打球，为我打开新世界。甚至，我还去整了牙。难以置信。见了老友，只能感慨岁月让我们的生活离得很远了。欢笑情如旧，萧疏鬓已斑。但都要加油，好好生活，直到无法再生活。相逢的人会再相逢。</p>
+<p>丢了唯一一本相册，装满高中、大学时的照片，初恋的，仰慕的人的照片。思之令人神伤。爸爸去世，似乎也带走了我生命中的确定感。失去，失去，和失去。</p>
+<p>胡适先生说，中年就是“做了过河卒子，只能拼命向前”。接近四十，我体会到中年的心态，也小小经历了所谓的中年危机。似乎仍未过去，尽力维持吧。只是不再害怕。</p>
+<p>仍在打羽毛球，乐在其中。咨询过教练，明年看看能否挤出时间正规训练下，纠正下动作。读书不多，几十本吧，大多数都是看电子书，科幻仍是我的最爱。刷剧和电影也不多。用天文望远镜看了许多次满月，看了木星和它的四颗卫星排成一条直线，看了带着草帽的土星。好书太多，好剧太多，想去未去的地方太多，想做未做的事太多，而时间太少。生命如一道闪电呀。</p>
+<p>明年希望大家都身体健康，过自己想过的人生。我要好好工作，快乐打球。</p>
+<p>想到马上又是春天，能看到蓬勃新绿的树和花，这世间，让人想永远永远活下去。</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://littlekalle.github.io/post/huai-nian-ba-ba/" class="post-title gt-a-link">
+                    怀念爸爸
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Fire walk with me
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://littlekalle.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

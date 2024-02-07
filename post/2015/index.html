@@ -1,0 +1,327 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>2015 | 迎向灵光消逝的年代</title>
+
+<link rel="shortcut icon" href="https://littlekalle.github.io/favicon.ico?v=1707271483436">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://littlekalle.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            迎向灵光消逝的年代
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1707271483436"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    2015
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2021-02-16 ·
+                    </time>
+                    
+                        <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tags">
+                            # 闲梦远
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <blockquote>
+<p>所有漫不经心的生活都只是生活的某种虚空形式，如果一个人意识不到这点，那就不是为自己生活，而是为生活牺牲，为生活卖命、奔波、劳苦；为达不到的目标烦恼，为不需要的权利而鼓噪；在生活的泥潭里打滚，把自己弄得污浊不堪。一旦前景破灭，就会苦不堪言，虽然为了自己解脱的缘故把生活的物质意义说得诤诤有词、言之凿凿，死后带走的仍是被人一眼看穿的孤独，这样的生活仅仅值得人死后再死一次了。      —— 托尔斯泰 - 战争与和平</p>
+</blockquote>
+<blockquote>
+<p>'Love is so short, oblivion so long.'      —— 聂鲁达</p>
+</blockquote>
+<!-- more -->
+<p><img src="https://littlekalle.github.io/post-images/1613479479960.jpg" alt="" loading="lazy"><br>
+又到了年底，似乎又该写点什么，对自己一年的时光有所交待，仿佛这样，就能心安理得地原谅蹉跎掉的日子。不过，正如歌里唱的，反正也不回头，反正，也回不了头。贴几张照片，是因为在整理微单上的照片，看到四月里满眼的绿，便记起踏青的情景。我久久立在如碧玉般的枫树前，仰头观看那伸入蓝天的绿，刚长出的新叶在微风中翻动，闪着嫩绿的光芒，四野皆绿，鹰鹃在山顶密林中一声声长长呼唤，这一刻，春天也充满我的身体。美是永恒的喜悦，拜伦写道。它遵守和季节的约定，年复一年努力绽出新绿。时光从未留下痕迹，它是这一棵枫树，也是千万年前阳光下摇啊笑的那一棵。而看树的人，在永恒中，只有一刹那。</p>
+<blockquote>
+<p>2010-2-27<br>
+回味着幼年时吃过的蔬菜的甘味，傍晚渐渐昏黑的天空下，我一边摘菜，一边又一次但更深刻地感受到生命只有一次，为此而起的遗憾甚至多过了生之喜悦。每次与我们亲爱的人相对，这每次，就是一生中只有的一次。在年年相会的人中，似乎一切都在重复，但所有的事情又都在改变，人们之间的关系，变得疏远的亲人，长大的小孩，逝去的老人。<br>
+死亡——由于年老使人隐退，因此世界上看起来并没有死亡，所有的人都在忙碌，来来去去。死亡是人独自承受的最后一击。这个时代是如此地崇拜年轻，以至于衰老让人觉得可耻。在镜中看到自己脸上冒出的细纹，心底深深叹息，终究，青春逝去了。</p>
+</blockquote>
+<p>偶然翻到近六年前写的这一段话，竟仍能有所触动。也许我所感受和思考的主题，来来回回不过是那么些。悲观主义者面对世界的可悲之处在于，一眼看到所有行为背后的盲目，无意义，重复，同时用这种结论作为自己从世界退缩的借口，挡箭牌。如果还是一个宿命论者，那差不多就决定了他无可救药的人生观。</p>
+<hr>
+<h2 id="读书">读书</h2>
+<p>读了五十几本书，有新领域，但没有特别惊喜。</p>
+<p>好好读了几本科幻。印象最深的是四卷本的&lt;海伯利安&gt;，马丁老爷子的&lt;热夜之梦&gt;，&lt;天渊&gt;，&lt;群星，我的归宿&gt;。当然，啃阿西莫夫七卷本&lt;基地&gt;系列时，头大如斗的感受也不必细说。科幻是自小的情之所钟。住在乡下时，夜里抬头凝视满天星斗的感叹和幻想，每年冬天盼望在南方天空见到猎户座的期待，从未稍稍衰减。今后还想多看点好科幻。</p>
+<p>读了亚隆的几本心理治疗小说，有点出乎意料的好看。还有一个大工程是啃了十来本去年从孔夫子上淘来的百花文艺散文，也算差不多一窥中国近现代作家的散文全貌。</p>
+<p>春天时又读了一遍李娟的几本书。翻开一本，随便从哪里都能兴致盎然地读下去。一点点小事，在她笔下都那样有趣，简洁明快，仿佛能在北疆的大风里吹出脆响。我甚至打开 Google地图，切换到卫星图，对着屏幕一寸寸看她笔下描述的那片土地。沙依横布拉克、阿勒泰市、喀吾图、吾塞、阿克哈拉。桥头只能找到一个差不多对应的地方，河边的小镇，对面就是纵横起伏的大山。我时常惊叹于她如何用简单的词语描绘出世界的万千色彩，种种无法言传的细节和情绪，也时常惊喜于一个个熟悉的词语如何被赋予新的意义和质地。我在想，读她文字的乐趣，到底有多少来自猎奇，来自对陌生生活和远方的幻想和好奇，有多少来自文字本身的干净准确？高耸翠绿起伏的北疆草原，幽深的阿尔泰山原始森林，蔚蓝的额尔齐斯河，的确让人神往，让人想在向阳的山坡草地上好好躺着睡一大觉，在森林里散一个兴之所至的步。但更加吸引我的，难道不是她面对艰苦生活，对繁重劳动，对寂寞，甚至，是对命运那种举重若轻、安之若素，而我也许永远学不会的乐观劲吗？之前一直关注一个博客，叫花草茶事，博主是武汉一个大学老师，研究日本文学，先生是日本人。平常写一些教书和家常琐事，孩子的种种，穿插读书心得，文字温润平和，我喜欢并羡慕她笔下清晰简单的生活和她对生活平静的态度。不像我，总是在纠结，总是恍惚。</p>
+<p>还开始重读&lt;静静的顿河&gt;。第一次读还是大学分四个学期才读完的。真不知那些荒废掉的时光都用来干什么去了。静静的顿河啊，我们的父亲。我们光荣的土地不用犁铧耕耘……我们的土地用马蹄来翻耕，光荣的土地上种的是哥萨克的头颅。</p>
+<p>从前喜爱自然文学，痴迷于花草树木、山川日月。回来后，精力分散到生活琐事上，即使有许多感触，比如深夜凝视浩浩长空一轮满月，比如惊叹漫天七彩晚霞有如幻境，亦只能任其从心头滑落。彼时的爱好，莫不如说是对抗孤独的武器，但彼时的我，也才是真实的我。</p>
+<p><strong>值得推荐的几本好书</strong>：</p>
+<ul>
+<li>红蕖留梦：叶嘉莹先生的回忆录。婚姻不幸，迁居台湾后生活艰辛，中年丧女，人生如此坎坷，却做成如此可观之事业，令人敬佩。她的人生，可以用她常常在讲诗词时说的“弱德之美”来形容，柔弱但坚守，虽有恸却无畏。豆瓣上有人有句简评：叶老师是一个没有温柔乡的女英雄。我以为很贴切。站在那里，她自身也就是一首诗。要以无生之觉悟，为有生之事业；以悲观之体认，过乐观之生活。另外，今年还收了几本中华书局出的迦陵说诗系列，布面精装，带藏书票，这几本书做得真是赏心悦目。想把之前买的其他版本都替换掉，那些就给老婆去糟蹋算了(说多了都是泪)。</li>
+<li>再活一次：这本书其实是借写作来参禅。借写作来体悟孤独，体悟这仅有一次永不再回的生命，借写作，再活一次。</li>
+<li>叶：贴近私人生活的历史，写活生生的人在自己生命中的浮沉，同时勾勒出时代对个人命运毫不留情的掌控鲜活迷人，。</li>
+<li>我们最幸福：由脱北者讲述的朝鲜生活。几乎是中国刚刚过去时代的翻版，残酷，毫无人性，社会主义特色的魔幻现实主义。</li>
+<li>多多，爸爸一直在这儿：很早以前就在豆瓣关注了肉腾腾，每次有多多的新照片，都会反复看许久。这个细腻有心的爸爸，为儿子拍下的照片，有时让人微笑，有时却让人黯然神伤，往往是照片下写的一段或几句话，勾起人对时光流逝，童年一闪而过的忧伤感受。新生命在老生命的土壤中成长，并将永远如此，世界新鲜，而为人父母所能做的，仅仅是看着这幼小的身躯慢慢长大，磕磕碰碰地前行，最多，只能在受伤时提供一个怀抱。生命的幸福和苦痛，都来自于此。</li>
+</ul>
+<p>一说到书我就开始话痨了，就此打住吧。</p>
+<hr>
+<h2 id="生活">生活</h2>
+<p>代还兄去瑞士前，特意绕道长沙来见了一面。虽然相聚只有短短半下午，仍有桃李春风之感。这么多年过去了，天南地北，生性疏懒如我，能维持几个如代还兄这样联系不断的好友，已属不易。去北京时，永林请我大吃一顿，畅谈至夜深。和大熊，户磊吃南门涮肉，感慨他们走得多么快，多么远，而我这些年仿佛在原地转圈。在朋友身上，我们看到自己的影子，看到各自成长的轨迹。朋友就是旅伴，人生许多无法消解的疑惑、孤独，都得以在一路同行中得到慰藉。</p>
+<p>夏天时让服役了近九年的 Thinkpad T60光荣退伍，在家充当下载机，换了台Macbook Pro。也抛弃了越来越迟钝的Android，投奔 iPhone 的怀抱。作为工具控和效率控的我，很满意这两个新玩具。买了把人体工学椅，换了罗技G602。在剁手的道路上，没有回头路。</p>
+<p>秋天时重新开始打网球。最开始在小熊同学当教授的学校里打了两次，学生太多难占到场地，后来发现小区里竟然就有一个网球场，全新的塑胶场，只是没有拉网子，但也几乎没见人打过。免费的还能要求更多么。再说，没网能难倒自己不动手会死星人的我么。于是火速从网上买了一个网子，周末不下雨便下楼打一两个小时。虽然对手是几乎没怎么打过，专长为乒乓球的老婆，我也乐在其中。热身一两次后，竟又很快学会了开放式正手打法，击球也比以前稳定，回球很少下网。回想起大学时学网球的时光，经常和吉勋同学搭档打球，而这么多年过去，不知小勋勋同学还打网球不。</p>
+<hr>
+<h2 id="宝宝">宝宝</h2>
+<blockquote>
+<p>2015-4-19<br>
+傍晚时，萌萌抓着泰迪熊四处逛，一边嘟嘟哝哝说着我们听不懂的外星语。走到书房里，熟练打开安全围栏门，并努力抬起脚跨进去，来来回回玩着开门关门的游戏。我蹲在围栏旁边，注视着她小小身体的一举一动。忽然，萌萌回过头来，清晰地叫爸爸，并深深盯着我的眼睛看。她深深深深直看到我心里。黄昏微光中，我看着她清明透亮的双眼中，如有清泉流动，眉毛黝黑细长，脸颊白嫩，鼻翼投下淡淡的阴影，嫩红小嘴微抿。心中忽起不甚怜爱之意，眼里竟涌满泪水。去年还抱在怀中，今年已满地飞跑。会说爸爸、妈妈、好吃、还要、水。不喜欢洗脸洗头，最爱玩厨房消毒碗柜。时光慢慢在她身上流淌，留下深深浅浅的痕迹。慢慢，她会有自己的喜好，会出去上学，会交朋友，会花更多时间在学习上，会与爸爸妈妈吵架赌气，会找男朋友，会结婚搬出去住。这小小身躯，全然依赖我们的时日，也就这么几年而已。想到这里，我真想让时光停住，让我可以这样长久注视黄昏中她明亮的眼眸。那些照料的艰辛，此时抱怨并承受着，也会离我们远去，甚至酿成回忆中的美酒。我想，我已体会到生儿育女最幸福的时刻。</p>
+</blockquote>
+<p>这两年大半工作之余时间都花在萌萌身上。吃饭穿衣，出外玩耍，喂奶哄睡。绝大多数时候甘之如饴，但也偶尔烦不胜烦，比如哄她一个小时还不睡觉，抱起来就要睡自己床，放到床上又开始自言自语，蹦蹦跳跳，我精疲力竭，感觉已被困在她身边一个世纪一般慢慢朽坏，她却冲你坏笑，又爬过来凑到你面前挤眉弄眼，甜甜地喊爸比，教人气也不是，笑也不是；比如她每天热衷于脱掉鞋子袜子光脚在冰凉的地板上走，因此感冒过好几回，气急败坏给她穿上又脱掉，一天重复好多次；比如她不肯吃饭，脸绕着圈躲开饭勺，嘴巴紧抿着；比如不肯擦香香，双手捂住脸，嘴里还嚷着：不要不——要八——要。</p>
+<p>从出生以来，萌萌就一直超级超级活跃，比我们身边的小孩、比同龄的男孩子好动好几倍。我们时常感叹，带她一个比带两个甚至三个普通小朋友还累。爬高下低，狼奔豕突，除了午睡，从早到晚，从不停歇。家里所有柜子、抽屉都必须锁起来，偶有疏忽，等待我们的便是满地狼藉。家里响起的，时常是啪、嘭，然后是我们的呵斥声。</p>
+<p>但，如精灵般活跃的她，带给我们多少欢乐呀。早上自己先醒了，便钻出被窝，边说，萌萌起来了，然后爬到我们旁边说，爸爸起来了，妈妈起来了。再不动弹，便一屁股坐到我们头上。晚上换尿片，顺手扔到房门处，啪的一声，萌萌听到，边喝奶，抽空说：好球！读卡片书，认识嘎嘎，青蛙，老虎，汽车，看到衣服，会说‘污服’，同时用手指指自己的衣服说，萌萌污服。看到蛋糕，嘴贴到书上作势在吃，同时吧唧嘴说，好吃，一脸陶醉的样子。去北京出差回来后，下班回家，萌萌会说：爸爸回来了。然后小跑过来给我拿拖鞋要给我换上。趁我换鞋时，贴上脸来，张开双臂，说，抱抱。问想不想爸爸，含糊不清但坚定地说：想！萌萌自言自语：摇摇摇……桥……好宝宝。听虫儿飞时，每句都能提前说出最后一个字，飞，美，碎，泪。</p>
+<p>看着她学会走路，再如小鹿般欢快地跑，学会自己穿袜子，从只会说单字到词再到简单句子，从只会说不要还要，到要求你抱起来到柜子上自己拿葡萄干吃，从只会说谢谢到会说不谢，说晚见，安全。简媜在红婴仔里面写道，养育一个孩子，是“为了参与一个生命的成长，参与意味着付出与欣赏”。不知道大自然在一个小小生命里提前藏好多少惊喜，她独立于我们，按着自己的天性在生长。而我们，在能牵着她的小手时，尽量多牵一会儿。因为放手的时候，很久。</p>
+<hr>
+<h2 id="闲想">闲想</h2>
+<p>尼采在讨论人如何才能活到极致时，如此写道：</p>
+<blockquote>
+<p>我给伟大下的药方是“热爱命运”，也就是不求相异，不求前进，不求后退，不求永垂不朽……不光是忍受无可避免之亊……而是要爱它……我想要逐渐学会领悟亊情必要性之美，如此我方能成为制造美丽亊物的人。</p>
+</blockquote>
+<p>伟大只能仰望。平凡如我辈，能做到热爱命运已不易。可只是去追逐人人追逐的？有点心有不甘。但对自己尚且做不到的事持这种看法并且坚持，又底气不足。眼下的生活，正是所谓的岁月静好。可我仍时常问自己，难道就是这样了吗？村上在&lt;国境以南，太阳以西&gt;里借主人公之口说，“有时也认为一切最终不过是逢场作戏罢了，我们不外乎在一个接一个熟练地扮演派到自己头上的角色”。有时，确实是如此吧。想到这里，不免让人灰心。从前看待将要到来的日子，如同准备不足的旅人，在尚未启程时想象旅途的艰辛，充满对未知的忧虑，对自己的不信任，但翻山越岭后才发觉，一切也不过如此。可是，果真如此吗？人生的本质又是什么？活着，去经历，去发现自己内心的召唤，去往自己向往的方向一点点努力改变自己，去打一场注定会输掉的战争。无非是抱着一些些希望，无非是有时开心，有时失落，一天天从琐碎中寻找着，试着看清未来的方向。无非是生活。</p>
+<p>越来越深刻体会到，仅仅是拥有、享受、体验并不能带来长久、深刻的满足，只有投入到自己喜爱的事情中，去创造，感受自己的生命力，去带给别人快乐或启发，才能如登山般获得不断更新的幸福感。</p>
+<p>我欣赏连岳说过的一句话：灵魂的出口在你自己手中。</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://littlekalle.github.io/post/2014/" class="post-title gt-a-link">
+                    2014
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Fire walk with me
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://littlekalle.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

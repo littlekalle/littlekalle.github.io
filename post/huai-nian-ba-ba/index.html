@@ -1,0 +1,292 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>怀念爸爸 | 迎向灵光消逝的年代</title>
+
+<link rel="shortcut icon" href="https://littlekalle.github.io/favicon.ico?v=1707271483436">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://littlekalle.github.io/styles/main.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css"> -->
+
+<style>
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script> -->
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <style>
+    /* 导航栏样式 */
+    .navbar {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        text-decoration: none;
+    }
+
+    .navbar-nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+
+    .navbar-collapse {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+    }
+
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        text-decoration: none;
+    }
+
+    @media (min-width: 992px) {
+        .navbar-expand-lg {
+            -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .navbar-expand-lg .navbar-nav {
+            -ms-flex-direction: row;
+            flex-direction: row;
+        }
+
+        .navbar-expand-lg .navbar-collapse {
+            display: -ms-flexbox !important;
+            display: flex !important;
+            -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+        }
+
+        .navbar-expand-lg .navbar-toggler {
+            display: none;
+        }
+    }
+
+    @media (max-width: 991px) {
+        #navbarSupportedContent {
+            display: none;
+        }
+    }
+</style>
+<nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            迎向灵光消逝的年代
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+            <div class="nav-item">
+                
+                <a href="/" class="menu gt-a-link">
+                    首页
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/archives" class="menu gt-a-link">
+                    归档
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/tags" class="menu gt-a-link">
+                    标签
+                </a>
+                
+            </div>
+            
+            <div class="nav-item">
+                
+                <a href="/post/about" class="menu gt-a-link">
+                    关于
+                </a>
+                
+            </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1707271483436"
+                action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+<script>
+    /* 移动端导航栏展开/收起切换 */
+    document.getElementById('changeNavbar').onclick = function () {
+        var element = document.getElementById('navbarSupportedContent');
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'block';
+        } else {
+            element.style.display = 'none';
+        }
+    }
+</script>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    怀念爸爸
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2023-07-03 ·
+                    </time>
+                    
+                        <a href="https://littlekalle.github.io/tag/0d1EDuCRs/" class="post-tags">
+                            # 闲梦远
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>时常梦见爸爸。春天，他在犁好的水田里做田埂。水平如镜，映着春天的微云和发着新芽的绿树。</p>
+<p>晚上，经常打开乡下家里的摄像头看很久。夜风中，桃树轻轻摇动，围墙外竹林簌簌作响。远远传来田间聒噪的蛙声。我盼着，也许有一天，爸爸看完抗日神剧出来，望望夜月的身影会再出现。妈妈说，我一直觉得你爸爸是出去做事没回来。如此强壮盛大的生命，近乎戛然而止，怎能不叫人心怀不甘。</p>
+<!-- more -->
+<p>“原子如风一般舞动着拂过世间万物。……我们生活的世界是燃烧的烈焰，我们在其中烧灼，我们一直沐浴在火焰里。”爸爸的身体，在烈焰中燃烧，熟悉的容颜化为白云，尚有余温。握着爸爸手的触感仍在手中，最后的喘息声犹在耳畔。</p>
+<p>爸爸是一个砌匠。热浪逼人的中午，他骑着单车出去干活。小时候，在阴凉处玩耍的我，无法想象他是如何顶着白花花的日头从早干到晚。我感到自己的软弱，并对成人世界的艰辛心存畏惧。傍晚回家，汗浸出的白花花盐渍爬满爸爸衣服后背，解放鞋里积满汗水。</p>
+<p>但他无所畏惧。他九岁失怙，在厂里干活，机床压断左手两指前两关节，从房上摔下断过小腿，他都一笑而过。苦在他看来，都不叫苦。有次摇柴油机，摇把失手打在上嘴唇上。我们回去，他笑着叫我们看，喝水时，一抿嘴，茶水从上嘴唇的伤口溢出来。</p>
+<p>什么都能自己动手，砌墙垒灶，补胎修车，犁田种豆。我做事不爱假手他人，大概也是从小耳濡目染。</p>
+<p>考上大学时，他送我去报道。带了很多茶叶蛋。绿皮火车到汉口换车，一夜摇晃到合肥。宿舍里床上只有木板，我们和衣而卧。眯了一会儿，便送他去西区外坐车，回长沙。年少懵懂的我，没有带他逛逛大学校园，背影也已模糊。这是二十年前的事了。</p>
+<p>后来他和我提起，说本来准备买票，去其他地方看看的，不知怎么作罢。我也没有问过他到了哪里，看了什么，那几天路上感受如何。</p>
+<p>我结婚前一天晚上，他坐公交车回家去。晚点有急事找他，电话却怎么打都不接。第二天问起，说坐反了方向，坐到河西岳麓山，看到很多他年轻时做过事的地方，一脸满足。</p>
+<p>想起三毛的万水千山走遍，如果有机会，爸爸也会是这样一个人，天真浪漫。我性情里，凝神山水时对远方无尽的向往，爸爸想来也是如此。</p>
+<p>大一暑假回家，他搬出一桶自己抓的鳝鱼。从前上学时，总可以在春天吃到。他知道我喜欢吃太极图，于是花了很多心思养了几个月，每天从池塘里提干净的水来换，为了离家上大学的我能一如既往尝到春天的美味。</p>
+<p>小朋友出生后，妈妈过来帮忙。爸爸在家种菜，还养了群鹅。有次回家，爸爸对我说，你看，我叫鹅鹅鹅，它们会应。边示范呼唤鹅，鹅群果然“鹅鹅鹅”地回应。他很开心的样子。每次翻到这段视频，未看完，泪水已盈满眼眶。</p>
+<p>我的拼音是他在老屋墙上启蒙的。他时常逗我女儿，说拖鞋的英文是“nia di tuo”，意思是在地上拖，每每惹得大家大笑。</p>
+<p>小时候在老屋竹席钉的楼层上寻宝，找出许多他年轻时用的工具，一把匕首、剖鳝鱼用的小刀、稀奇古怪杂七杂八的玩意等等。便想到，爸爸不是一直是爸爸，也曾是小孩，也曾年轻。小学暑假贪玩水中暑，爸爸收工回来，骑车带我去吊水。记得从病中渐渐恢复的神志，解脱感。</p>
+<p>都是一些小事。</p>
+<p>生病后无法行走。他几次对我说，梦里啊，四处都去了。很多年前他算命，说活不过六十三。满六十三虚岁时，我对他说，别信那个。没想到一语成谶。不知冥冥中是否确有命运。</p>
+<p>有时候，我望着皎洁圆满的月，问，爸爸，你去哪里了呀？三十多年的时光，一家人一起陪伴、经历，艰苦而欢乐。小时候的生活贫寒却温暖，在记忆中闪耀着微光。只是，我以为还有很长很长的时光，还有许多许多机会。人生天地间，忽如远行客。</p>
+<p>“如果我哭喊，各级天使中有谁会听见我？”二十岁时读里尔克，似是而非，如今痛彻心扉。</p>
+<p>每个碳原子一旦存在就会一直存在。在光辉灿烂的尽头，组成我们身体的尘埃，也会再相遇吧。</p>
+<p>哭写于爸爸两周年忌日。</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://littlekalle.github.io/post/chang-bai-shan-zhong-de-suo-luo/" class="post-title gt-a-link">
+                    长白山中的梭罗
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"></div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Fire walk with me
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://littlekalle.github.io/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>
